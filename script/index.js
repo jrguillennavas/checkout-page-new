@@ -37,7 +37,7 @@ const total = () => {
   total.innerText = `$${showTotal}`
 };
 
-const saveData = () => {
+ const saveData = () => {
   if (save.checked) {
     let data = [];
     localStorage.clear();
@@ -51,7 +51,7 @@ const saveData = () => {
 };
 
 const showDataFrom = () => {
-  if (localStorage.getItem("datas").length > 0) {
+  if (localStorage.getItem("datas")) {
     let data = localStorage.getItem("datas").split(",");
     const inputs = document.querySelectorAll("input");
     inputs.forEach((value, key) => {
@@ -88,7 +88,8 @@ const resetCountItem = () => {
 
 window.addEventListener('load', () => {
 
-  showDataFrom()
+    showDataFrom()
+
 
   add1.addEventListener("click", () => {
     equations("plus", "count1")
