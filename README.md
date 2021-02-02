@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://checkout-page-new.jrguillennavas.vercel.app/">
+    <a href="https://checkpout-page-new.jrguillennavas.vercel.app">
       Demo
     </a>
     <span> | </span>
