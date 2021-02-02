@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/index.css".css">
+  <link rel="stylesheet" media="(min-width:760px)" href="assets/styles/indexTablet.css".css">
+  <link rel="stylesheet" media="(min-width:1020px)" href="assets/styles/indexFull.css".css">
+</head>
+<body>
+  <header class="Header">
+    <h1 class="Header__title">Checkout</h1>
+  </header>
+  <section class="Shipping">
+    <div class="Shipping__content">
+      <div class="Item">
+        <img src="./assets/static/photo1.png" alt="Laptop's bag" class="Item__photo">
+        <div class="Item__info">
+          <div class="Item__name-price">
+            <h2 class="item__name">Vintage Backbag</h2>
+            <span class="item__price">$54.99</span> <span class="Item__discount"><del>$94.99</del></span>
+          </div>  
+          <div class="Item__count">
+            <span class="material-icons Icon-add-less" id="less1">remove</span>
+            <span id="count1">1</span>
+            <span class="material-icons Icon-add-less" id="add1">add</span>
+          </div>      
+        </div>
+      </div>
+      <div class="Item">
+        <img src="./assets/static/photo2.png" alt="blue cloth shoes" class="Item__photo">
+        <div class="Item__info">
+          <div class="Item__name-price">
+            <h2 class="item__name">Levi Shoes</h2>
+            <span class="item__price">$74.99</span> <span class="Item__discount"><del>$124.99</del></span>
+          </div>  
+          <div class="Item__count">
+            <span class="material-icons Icon-add-less" id="less2">remove</span>
+            <span id="count2">1</span>
+            <span class="material-icons Icon-add-less" id="add2">add</span>
+          </div>      
+        </div>
+      </div>
+    </div>
+    <div class="Shipping__money">
+      <div class="Money-content">
+        <span class="Money__title">Shipping</span>
+        <span class="Money__count">$19</span>
+      </div>
+      <div class="Money-content">
+        <span class="Money__title">Total</span>
+        <span class="Money__count" id="total">$148.98</span>
+      </div>
+    </div>
+  </section>
+  <section class="Info">
+    <form class="Contact" id="send-form">
+      <div class="Message" id="message">Saved data ...</div>
+      <h2 class="Info__title">Contact infomation</h2>
+      <div class="Information">
+        <label for="email" class="Label__from">
+          E-mail <span class="material-icons Icon-from" id="less1">email</span>
+          <input type="text" name="email" id="email" class="Input__from" placeholder="Enter your email..." required>
+        </label>
+        <label for="phone" class="Label__from">
+          Phone <span class="material-icons Icon-from" id="less1">phone</span>
+          <input type="text" name="phone" id="phone" class="Input__from" placeholder="Enter your phone..." required>
+        </label>
+      </div>
+          <h2 class="Info__title">Shipping address</h2>
+          <div class="Address">
+            <label for="fullNama" class="Label__from">
+              Full name <span class="material-icons Icon-from" id="less1">account_circle</span>
+              <input type="text" name="fullNama" id="fullNama" class="Input__from" placeholder="Full name ..." required>
+            </label>
+            <label for="address" class="Label__from">
+              Address <span class="material-icons Icon-from" id="less1">home</span>
+              <input type="text" name="address" id="address" class="Input__from" placeholder="Your address.." required>
+            </label>
+            <label for="city" class="Label__from">
+              City <span class="material-icons Icon-from" id="less1">location_city</span>
+              <input type="text" name="city" id="city" class="Input__from" placeholder="Your city.." required>
+            </label>
+            <div class="Contry-code">
+              <label for="contry" class="Label__from Label-from">
+                Contry <span class="material-icons Icon-from" id="less1">public</span>
+              <input type="text" name="contry" id="contry" class="Input__from Input-form" placeholder="Your country.." required>
+              </label>        
+              <label for="postal" class="Label__from Label-from">
+                Postal code <span class="material-icons Icon-from" id="less1">markunread_mailbox</span>
+                <input type="text" name="postal" id="postal" class="Input__from Input-form"  placeholder="Your postal code.." required>
+              </label>
+            </div>
+            <div class="Save">
+              <label for="save" class="Label__save">
+                <input type="checkbox" name="save" id="save" class="Input__save">
+                Save this information for next time
+              </label>
+            </div>
+            <div class="Btn">
+              <input type="submit" value="Continue" class="Input__btn">
+            </div>
+          </div>
+      </form>
+  </section>
+  <footer>  
+    <h3>José R. Guillen @ DevChallenges.io </h3>
+  </footer>
+  <script src="./script/index.js"></script>
+</body>
+</html>

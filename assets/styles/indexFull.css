@@ -1,0 +1,112 @@
+body{
+  width: 90%;
+  max-width: 1433px;
+  min-height: 100vh;
+  padding: 0px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 10rem 1fr 10rem;
+}
+.Header{
+  height: 100%;
+  grid-column: 1/-1;
+  grid-template-rows: 1/2;
+  align-items: center;
+}
+.Header__title{
+  font-size: 3.6rem;
+
+}
+/*----- Message -----*/
+.Message{
+  display: none;
+  font-size: 2rem;
+
+}
+
+/*----- From ------*/
+.Info{
+  margin-top: 0;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  width: 75%;
+  min-height: 90%;
+  align-items: flex-start;
+}
+.Contact{
+  min-height: 90%;
+  justify-content: start;
+}
+.Information{
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+
+}
+.Address{
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Info__title{
+  font-size: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+.Label__from{
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+}
+.Input__from{
+  padding-left: 3.5rem;
+  height: 5.6rem;
+  font-size: 1.6rem;
+  
+}
+.Icon-from{
+  position: absolute;
+  top: 3.8rem;
+  left: .8rem;
+  font-size: 2.5rem;
+}
+.Save{
+  font-size: 1.5rem;
+}
+.Input__save{
+  width: 1.6rem;
+  height: 1.6rem;
+}
+/*----- Shipping -----*/
+.Shipping{
+  margin-top: 2rem;
+  width: 55%;
+  min-height: 45%;
+  grid-row: 2/-1;
+  grid-column: 2/-1;
+}
+.item__name{
+  font-size: 1.6rem;
+}
+.item__price{
+  font-size: 1.6rem;
+}
+.Item__discount{
+  font-size: 1.2rem;
+}
+.Shipping__money{
+  font-size: 1.8rem;
+}
+.Money-content{
+  height: 6rem;
+}
+
+/*----- Footer -----*/
+footer{
+  grid-row: 3/-1;
+  grid-column: 1/-1;
+  min-height: 100%;
+  font-size: 1.4rem;
+}
