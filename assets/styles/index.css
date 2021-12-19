@@ -74,6 +74,9 @@ body{
   flex-direction: column;
   justify-content: space-between;
 }
+img{
+  margin-right: 5px;
+}
 .item__name{
   color: #4e5150;
   font-size: 1.2rem;
